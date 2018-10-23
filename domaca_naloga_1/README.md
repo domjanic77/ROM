@@ -10,7 +10,7 @@
 - 3
 ### [Učni list - Računanje s koreni.pdf](https://www.sc-nm.si/sss/si/file/download/827_d73e71be4845/U%C4%8Dni%20list%20-%20Ra%C4%8Dunanje%20s%20koreni.pdf)
 - št. naloge
-- 7
+- 6
 ### [Učni list - Sistemi linearnih enačb.pdf](https://www.sc-nm.si/sss/si/file/download/836_975520bdf6aa/U%C4%8Dni%20list%20-%20Sistemi%20linearnih%20ena%C4%8Db.pdf)
 - št. naloge
 - 4
