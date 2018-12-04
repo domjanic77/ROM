@@ -1,4 +1,4 @@
 
 TEMA ZA PROJEKT MATHEMATICA
 
-Ideja: Na 2D graf bom izrisal logo superman-a s pomočjo večih omejenih funkcij. Z manipulate bi spreminjal velikost logota.
+Na 2D graf bom izrisal logo superman-a s pomočjo večih omejenih funkcij. Z manipulate bi spreminjal velikost logota.
