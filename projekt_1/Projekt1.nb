@@ -1,0 +1,496 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     19674,        488]
+NotebookOptionsPosition[     17101,        436]
+NotebookOutlinePosition[     17449,        451]
+CellTagsIndexPosition[     17406,        448]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"SetDirectory", "[", 
+  "\"\<C:\\\\Users\\\\Ale\[SHacek]\\\\Documents\\\\ROM\\\\projekt_1\>\"", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.7558681627103515`*^9, 
+  3.7558681709432726`*^9}},ExpressionUUID->"f00f59b6-d1e4-4c80-a5c6-\
+4cec95385254"],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\Ale\[SHacek]\\\\Documents\\\\ROM\\\\projekt_\
+1\"\>"], "Output",
+ CellChangeTimes->{
+  3.7558681739733443`*^9},ExpressionUUID->"639ef6c7-d0ad-44d5-bfd3-\
+4d50536c0419"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Directory", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.7558681768167343`*^9, 
+  3.7558681810029907`*^9}},ExpressionUUID->"d8a157ef-e91b-42fa-ab9f-\
+f0ecbb0fbb84"],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\Ale\[SHacek]\\\\Documents\\\\ROM\\\\projekt_\
+1\"\>"], "Output",
+ CellChangeTimes->{
+  3.7558681820497646`*^9},ExpressionUUID->"b3f80374-d035-4479-8cda-\
+fc8713ea30ae"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Tabela1", " ", "=", " ", 
+   RowBox[{
+    RowBox[{"Import", "[", "\"\<UEFAChampionsLeague.xlsx\>\"", "]"}], "//", 
+    "First"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.7558681927190256`*^9, 3.755868239239432*^9}, {
+   3.755868292831065*^9, 3.7558683297443495`*^9}, {3.755869917961183*^9, 
+   3.7558699332928743`*^9}, 3.7558709156433525`*^9, {3.7558719888574467`*^9, 
+   3.7558719905343328`*^9}},ExpressionUUID->"076d0e10-192e-4f5a-8c87-\
+e4f64af0e8d5"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Tabela1", " ", "//", " ", "TableForm"}]], "Input",
+ CellChangeTimes->{{3.755868226148739*^9, 3.75586823299084*^9}, 
+   3.755870922897954*^9},ExpressionUUID->"1e16e345-e8c4-461c-8180-\
+3b20dabfe449"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\<\"Igralci\"\>", "\<\"Vi\[SHacek]ina\"\>", "\<\"Te\[ZHacek]a\"\>", "\<\
+\"MIN\"\>", "\<\"Goli\"\>", "\<\"Asistence\"\>", "\<\"Rumen\"\>", "\<\"Rde\
+\[CHacek]\"\>", "\<\"Streli\"\>"},
+    {"\<\"Carvajal\"\>", "173.`", "73.`", "239.`", "0.`", 
+     "0.`", "\<\"\"\>", "\<\"\"\>", "1.`"},
+    {"\<\"Vallejo\"\>", "184.`", "79.`", "90.`", "0.`", 
+     "0.`", "\<\"\"\>", "\<\"\"\>", "0.`"},
+    {"\<\"Sergio Ramos\"\>", "184.`", "82.`", "329.`", "0.`", "0.`", 
+     "2.`", "\<\"\"\>", "2.`"},
+    {"\<\"Varane\"\>", "191.`", "81.`", "270.`", "0.`", "0.`", 
+     "1.`", "\<\"\"\>", "1.`"},
+    {"\<\"Nacho\"\>", "180.`", "76.`", "270.`", "0.`", "0.`", 
+     "1.`", "\<\"\"\>", "1.`"},
+    {"\<\"Marcelo\"\>", "174.`", "80.`", "344.`", "1.`", 
+     "1.`", "\<\"\"\>", "\<\"\"\>", "1.`"},
+    {"\<\"Odriozola\"\>", "176.`", "66.`", "227.`", "0.`", 
+     "0.`", "\<\"\"\>", "\<\"\"\>", "0.`"},
+    {"\<\"Reguilon\"\>", "178.`", "68.`", "180.`", "0.`", 
+     "0.`", "\<\"\"\>", "\<\"\"\>", "1.`"},
+    {"\<\"Kroos\"\>", "183.`", "76.`", "465.`", "1.`", "2.`", 
+     "1.`", "\<\"\"\>", "2.`"},
+    {"\<\"Modric\"\>", "172.`", "66.`", "287.`", "0.`", "1.`", 
+     "1.`", "\<\"\"\>", "2.`"},
+    {"\<\"Casemiro\"\>", "185.`", "84.`", "328.`", "1.`", 
+     "0.`", "\<\"\"\>", "\<\"\"\>", "1.`"},
+    {"\<\"Valverde\"\>", "181.`", "78.`", "136.`", "0.`", "0.`", 
+     "1.`", "\<\"\"\>", "1.`"},
+    {"\<\"M. Llorente\"\>", "184.`", "73.`", "148.`", "0.`", 
+     "0.`", "\<\"\"\>", "\<\"\"\>", "1.`"},
+    {"\<\"Asensio\"\>", "182.`", "76.`", "230.`", "0.`", 
+     "0.`", "\<\"\"\>", "\<\"\"\>", "2.`"},
+    {"\<\"Isco\"\>", "176.`", "79.`", "251.`", "1.`", "0.`", 
+     "1.`", "\<\"\"\>", "2.`"},
+    {"\<\"D. Ceballos\"\>", "179.`", "70.`", "185.`", "0.`", 
+     "0.`", "\<\"\"\>", "\<\"\"\>", "1.`"},
+    {"\<\"Mariano\"\>", "182.`", "76.`", "64.`", "1.`", 
+     "0.`", "\<\"\"\>", "\<\"\"\>", "1.`"},
+    {"\<\"Benzema\"\>", "185.`", "81.`", "425.`", "3.`", 
+     "2.`", "\<\"\"\>", "\<\"\"\>", "3.`"},
+    {"\<\"Bale\"\>", "185.`", "81.`", "367.`", "3.`", 
+     "2.`", "\<\"\"\>", "\<\"\"\>", "3.`"},
+    {"\<\"Lucas Vazquez\"\>", "173.`", "70.`", "328.`", "1.`", 
+     "1.`", "\<\"\"\>", "\<\"\"\>", "1.`"},
+    {"\<\"Vinicius Junior\"\>", "177.`", "73.`", "118.`", "0.`", 
+     "1.`", "\<\"\"\>", "\<\"\"\>", "3.`"}
+   },
+   GridBoxAlignment->{
+    "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+     "RowsIndexed" -> {}},
+   GridBoxSpacings->{"Columns" -> {
+       Offset[0.27999999999999997`], {
+        Offset[2.0999999999999996`]}, 
+       Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+       Offset[0.2], {
+        Offset[0.4]}, 
+       Offset[0.2]}, "RowsIndexed" -> {}}],
+  Function[BoxForm`e$, 
+   TableForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{{3.75587196914169*^9, 
+  3.755871993811374*^9}},ExpressionUUID->"01a14882-78d2-4f0d-b1a0-\
+e0218b102341"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"GlavaTab", "[", "podatki_", "]"}], ":=", 
+  RowBox[{"First", "[", "podatki", "]"}]}]], "Input",
+ CellChangeTimes->{{3.755870932585375*^9, 3.7558709504662247`*^9}, {
+  3.7558709911580467`*^9, 3.755871006678308*^9}, {3.755871363848709*^9, 
+  3.7558713653133354`*^9}, {3.7558715210674934`*^9, 
+  3.755871528505149*^9}},ExpressionUUID->"2e4b20fd-725b-4c9d-ae7a-\
+46926cb1f470"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"GlavaTab", "[", "Tabela1", "]"}]], "Input",
+ CellChangeTimes->{{3.755870953653214*^9, 3.7558709656765003`*^9}, {
+  3.755871531366576*^9, 
+  3.7558715343990145`*^9}},ExpressionUUID->"9ecb2985-0339-49f0-bf14-\
+48876cca43a3"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"Igralci\"\>", ",", "\<\"Vi\[SHacek]ina\"\>", 
+   ",", "\<\"Te\[ZHacek]a\"\>", ",", "\<\"MIN\"\>", ",", "\<\"Goli\"\>", 
+   ",", "\<\"Asistence\"\>", ",", "\<\"Rumen\"\>", 
+   ",", "\<\"Rde\[CHacek]\"\>", ",", "\<\"Streli\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.755871026213408*^9, {3.755871535112379*^9, 3.7558715391046944`*^9}, 
+   3.7558720094218707`*^9},ExpressionUUID->"add79eac-5c16-4285-beee-\
+4f21a29be190"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Podatek", "[", "podatki_", "]"}], ":=", 
+  RowBox[{"Rest", "[", "podatki", "]"}]}]], "Input",
+ CellChangeTimes->{{3.7558716472650843`*^9, 
+  3.755871666626921*^9}},ExpressionUUID->"a9dc3339-71c7-4f57-bda1-\
+c2fdaef2f4dc"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Podatek", "[", "Tabela1", "]"}]], "Input",
+ CellChangeTimes->{{3.755871669930794*^9, 
+  3.755871676821781*^9}},ExpressionUUID->"aa57215e-b975-4f4e-8dc7-\
+70a196159547"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"Carvajal\"\>", ",", "173.`", ",", "73.`", ",", "239.`", ",", 
+     "0.`", ",", "0.`", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "1.`"}], "}"}],
+    ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Vallejo\"\>", ",", "184.`", ",", "79.`", ",", "90.`", ",", 
+     "0.`", ",", "0.`", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "0.`"}], "}"}],
+    ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Sergio Ramos\"\>", ",", "184.`", ",", "82.`", ",", "329.`", 
+     ",", "0.`", ",", "0.`", ",", "2.`", ",", "\<\"\"\>", ",", "2.`"}], "}"}],
+    ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Varane\"\>", ",", "191.`", ",", "81.`", ",", "270.`", ",", 
+     "0.`", ",", "0.`", ",", "1.`", ",", "\<\"\"\>", ",", "1.`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Nacho\"\>", ",", "180.`", ",", "76.`", ",", "270.`", ",", 
+     "0.`", ",", "0.`", ",", "1.`", ",", "\<\"\"\>", ",", "1.`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Marcelo\"\>", ",", "174.`", ",", "80.`", ",", "344.`", ",", 
+     "1.`", ",", "1.`", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "1.`"}], "}"}],
+    ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Odriozola\"\>", ",", "176.`", ",", "66.`", ",", "227.`", ",",
+      "0.`", ",", "0.`", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "0.`"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Reguilon\"\>", ",", "178.`", ",", "68.`", ",", "180.`", ",", 
+     "0.`", ",", "0.`", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "1.`"}], "}"}],
+    ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Kroos\"\>", ",", "183.`", ",", "76.`", ",", "465.`", ",", 
+     "1.`", ",", "2.`", ",", "1.`", ",", "\<\"\"\>", ",", "2.`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Modric\"\>", ",", "172.`", ",", "66.`", ",", "287.`", ",", 
+     "0.`", ",", "1.`", ",", "1.`", ",", "\<\"\"\>", ",", "2.`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Casemiro\"\>", ",", "185.`", ",", "84.`", ",", "328.`", ",", 
+     "1.`", ",", "0.`", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "1.`"}], "}"}],
+    ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Valverde\"\>", ",", "181.`", ",", "78.`", ",", "136.`", ",", 
+     "0.`", ",", "0.`", ",", "1.`", ",", "\<\"\"\>", ",", "1.`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"M. Llorente\"\>", ",", "184.`", ",", "73.`", ",", "148.`", 
+     ",", "0.`", ",", "0.`", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "1.`"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Asensio\"\>", ",", "182.`", ",", "76.`", ",", "230.`", ",", 
+     "0.`", ",", "0.`", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "2.`"}], "}"}],
+    ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Isco\"\>", ",", "176.`", ",", "79.`", ",", "251.`", ",", 
+     "1.`", ",", "0.`", ",", "1.`", ",", "\<\"\"\>", ",", "2.`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"D. Ceballos\"\>", ",", "179.`", ",", "70.`", ",", "185.`", 
+     ",", "0.`", ",", "0.`", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "1.`"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Mariano\"\>", ",", "182.`", ",", "76.`", ",", "64.`", ",", 
+     "1.`", ",", "0.`", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "1.`"}], "}"}],
+    ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Benzema\"\>", ",", "185.`", ",", "81.`", ",", "425.`", ",", 
+     "3.`", ",", "2.`", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "3.`"}], "}"}],
+    ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Bale\"\>", ",", "185.`", ",", "81.`", ",", "367.`", ",", 
+     "3.`", ",", "2.`", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "3.`"}], "}"}],
+    ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Lucas Vazquez\"\>", ",", "173.`", ",", "70.`", ",", "328.`", 
+     ",", "1.`", ",", "1.`", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "1.`"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Vinicius Junior\"\>", ",", "177.`", ",", "73.`", ",", 
+     "118.`", ",", "0.`", ",", "1.`", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", 
+     "3.`"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.7558716778806973`*^9, 
+  3.755872013513268*^9},ExpressionUUID->"49f17a5e-2bb5-458a-ab06-\
+7be86eeb492e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"IndeksStolpca", "[", 
+   RowBox[{"podatki_", ",", "stolpec_"}], "]"}], ":=", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Position", "[", 
+     RowBox[{
+      RowBox[{"GlavaTab", "[", "podatki", "]"}], ",", "stolpec"}], "]"}], "//",
+     "First"}], "//", "First"}]}], "\[IndentingNewLine]", 
+ RowBox[{"IndeksStolpca", "[", 
+  RowBox[{"Tabela1", ",", "\"\<Asistence\>\""}], "]"}]}], "Input",
+ CellChangeTimes->{{3.7558721248202553`*^9, 
+  3.755872147720581*^9}},ExpressionUUID->"1cffadf7-73cf-4089-a5af-\
+d8b30b080bd1"],
+
+Cell[BoxData["6"], "Output",
+ CellChangeTimes->{
+  3.7558721487009797`*^9},ExpressionUUID->"79059ef0-09b4-469f-9fd8-\
+a6ea28e1eb48"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Vrstica", "[", 
+   RowBox[{"podatki_", ",", "i_"}], "]"}], ":=", 
+  RowBox[{
+   RowBox[{"Podatek", "[", "podatki", "]"}], "[", 
+   RowBox[{"[", "i", "]"}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"Vrstica", "[", 
+  RowBox[{"Tabela1", ",", "19"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.7558716260852757`*^9, 3.755871628405851*^9}, {
+  3.755871719950469*^9, 3.755871725042048*^9}, {3.7558720362588058`*^9, 
+  3.755872050988864*^9}},ExpressionUUID->"1700b7a8-bee6-4e85-8cb4-\
+b3a035434861"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"Bale\"\>", ",", "185.`", ",", "81.`", ",", "367.`", ",", "3.`",
+    ",", "2.`", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "3.`"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{
+  3.755872051943305*^9},ExpressionUUID->"70bbb415-0d8b-479e-9321-\
+305d9c5dc08d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Stolpec", "[", 
+   RowBox[{"podatki_", ",", "stolpec_"}], "]"}], ":=", 
+  RowBox[{
+   RowBox[{"Transpose", "[", 
+    RowBox[{"Podatek", "[", "podatki", "]"}], "]"}], "[", 
+   RowBox[{"[", 
+    RowBox[{"IndeksStolpca", "[", 
+     RowBox[{"podatki", ",", "stolpec"}], "]"}], "]"}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"Stolpec", "[", 
+  RowBox[{"Tabela1", ",", "\"\<Igralci\>\""}], "]"}]}], "Input",
+ CellChangeTimes->{{3.755872169877453*^9, 
+  3.755872195240167*^9}},ExpressionUUID->"f82ad9ff-0098-4a86-8116-\
+c5b275bafea5"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"Carvajal\"\>", ",", "\<\"Vallejo\"\>", 
+   ",", "\<\"Sergio Ramos\"\>", ",", "\<\"Varane\"\>", ",", "\<\"Nacho\"\>", 
+   ",", "\<\"Marcelo\"\>", ",", "\<\"Odriozola\"\>", ",", "\<\"Reguilon\"\>", 
+   ",", "\<\"Kroos\"\>", ",", "\<\"Modric\"\>", ",", "\<\"Casemiro\"\>", 
+   ",", "\<\"Valverde\"\>", ",", "\<\"M. Llorente\"\>", 
+   ",", "\<\"Asensio\"\>", ",", "\<\"Isco\"\>", ",", "\<\"D. Ceballos\"\>", 
+   ",", "\<\"Mariano\"\>", ",", "\<\"Benzema\"\>", ",", "\<\"Bale\"\>", 
+   ",", "\<\"Lucas Vazquez\"\>", ",", "\<\"Vinicius Junior\"\>"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{{3.7558721822007895`*^9, 
+  3.7558721959101267`*^9}},ExpressionUUID->"a7e580c6-5c7e-4d65-abda-\
+79d6b800b1ce"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Tabela2", " ", "=", " ", 
+   RowBox[{
+    RowBox[{"Import", "[", "\"\<LaLiga.xlsx\>\"", "]"}], "//", "First"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.7558722911551747`*^9, 
+  3.755872298139576*^9}},ExpressionUUID->"c85e1127-7e26-4b0f-ba22-\
+a0d6709bea55"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Tabela2", "//", "TableForm"}]], "Input",
+ CellChangeTimes->{{3.7558723050337696`*^9, 
+  3.7558723153166957`*^9}},ExpressionUUID->"58dd5e8b-35cc-432f-bb34-\
+0b619bd1cbe1"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\<\"Igralci\"\>", "\<\"Vi\[SHacek]ina\"\>", "\<\"Te\[ZHacek]a\"\>", "\<\
+\"MIN\"\>", "\<\"Goli\"\>", "\<\"Asistence\"\>", "\<\"Rumen\"\>", "\<\"Rde\
+\[CHacek]\"\>", "\<\"Streli\"\>"},
+    {"\<\"Carvajal\"\>", "173.`", "73.`", "936.`", "1.`", "1.`", 
+     "4.`", "\<\"\"\>", "1.`"},
+    {"\<\"Sergio Ramos\"\>", "184.`", "82.`", "1620.`", "4.`", "1.`", 
+     "2.`", "\<\"\"\>", "1.`"},
+    {"\<\"Varane\"\>", "191.`", "81.`", "1247.`", "1.`", 
+     "0.`", "\<\"\"\>", "\<\"\"\>", "1.`"},
+    {"\<\"Nacho\"\>", "180.`", "76.`", "760.`", "0.`", "0.`", 
+     "3.`", "\<\"\"\>", "0.`"},
+    {"\<\"Marcelo\"\>", "174.`", "80.`", "926.`", "2.`", "0.`", 
+     "3.`", "\<\"\"\>", "1.`"},
+    {"\<\"Odriozola\"\>", "176.`", "66.`", "550.`", "0.`", 
+     "1.`", "\<\"\"\>", "\<\"\"\>", "0.`"},
+    {"\<\"Reguilon\"\>", "178.`", "68.`", "239.`", "0.`", "0.`", 
+     "1.`", "\<\"\"\>", "0.`"},
+    {"\<\"Kroos\"\>", "183.`", "76.`", "1246.`", "0.`", "1.`", 
+     "1.`", "\<\"\"\>", "1.`"},
+    {"\<\"Modric\"\>", "172.`", "66.`", "1291.`", "0.`", "2.`", 
+     "3.`", "\<\"\"\>", "1.`"},
+    {"\<\"Casemiro\"\>", "185.`", "84.`", "991.`", "0.`", "0.`", 
+     "2.`", "\<\"\"\>", "1.`"},
+    {"\<\"Valverde\"\>", "181.`", "78.`", "78.`", "0.`", 
+     "0.`", "\<\"\"\>", "\<\"\"\>", "0.`"},
+    {"\<\"M. Llorente\"\>", "184.`", "73.`", "281.`", "0.`", 
+     "0.`", "\<\"\"\>", "\<\"\"\>", "0.`"},
+    {"\<\"Asensio\"\>", "182.`", "76.`", "997.`", "1.`", "1.`", 
+     "1.`", "\<\"\"\>", "2.`"},
+    {"\<\"Isco\"\>", "176.`", "79.`", "594.`", "1.`", "2.`", 
+     "1.`", "\<\"\"\>", "1.`"},
+    {"\<\"D. Ceballos\"\>", "179.`", "70.`", "706.`", "1.`", "0.`", 
+     "2.`", "\<\"\"\>", "0.`"},
+    {"\<\"Mariano\"\>", "182.`", "76.`", "205.`", "0.`", "0.`", 
+     "1.`", "\<\"\"\>", "2.`"},
+    {"\<\"Benzema\"\>", "185.`", "81.`", "1442.`", "7.`", "2.`", 
+     "1.`", "\<\"\"\>", "3.`"},
+    {"\<\"Bale\"\>", "185.`", "81.`", "1098.`", "4.`", "2.`", 
+     "3.`", "\<\"\"\>", "4.`"},
+    {"\<\"Lucas Vazquez\"\>", "173.`", "70.`", "768.`", "1.`", "2.`", "2.`", 
+     "1.`", "1.`"},
+    {"\<\"Vinicius Junior\"\>", "177.`", "73.`", "151.`", "1.`", 
+     "0.`", "\<\"\"\>", "\<\"\"\>", "1.`"}
+   },
+   GridBoxAlignment->{
+    "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+     "RowsIndexed" -> {}},
+   GridBoxSpacings->{"Columns" -> {
+       Offset[0.27999999999999997`], {
+        Offset[2.0999999999999996`]}, 
+       Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+       Offset[0.2], {
+        Offset[0.4]}, 
+       Offset[0.2]}, "RowsIndexed" -> {}}],
+  Function[BoxForm`e$, 
+   TableForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{
+  3.7558723158376617`*^9},ExpressionUUID->"242ec141-5031-4523-8255-\
+c367a56a0ec1"]
+}, Open  ]]
+},
+WindowSize->{1536, 781},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"11.2 for Microsoft Windows (64-bit) (September 10, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 268, 6, 28, "Input",ExpressionUUID->"f00f59b6-d1e4-4c80-a5c6-4cec95385254"],
+Cell[851, 30, 201, 4, 32, "Output",ExpressionUUID->"639ef6c7-d0ad-44d5-bfd3-4d50536c0419"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1089, 39, 187, 4, 28, "Input",ExpressionUUID->"d8a157ef-e91b-42fa-ab9f-f0ecbb0fbb84"],
+Cell[1279, 45, 201, 4, 32, "Output",ExpressionUUID->"b3f80374-d035-4479-8cda-fc8713ea30ae"]
+}, Open  ]],
+Cell[1495, 52, 490, 10, 28, "Input",ExpressionUUID->"076d0e10-192e-4f5a-8c87-e4f64af0e8d5"],
+Cell[CellGroupData[{
+Cell[2010, 66, 222, 4, 28, "Input",ExpressionUUID->"1e16e345-e8c4-461c-8180-3b20dabfe449"],
+Cell[2235, 72, 2943, 62, 402, "Output",ExpressionUUID->"01a14882-78d2-4f0d-b1a0-e0218b102341"]
+}, Open  ]],
+Cell[5193, 137, 408, 8, 28, "Input",ExpressionUUID->"2e4b20fd-725b-4c9d-ae7a-46926cb1f470"],
+Cell[CellGroupData[{
+Cell[5626, 149, 246, 5, 28, "Input",ExpressionUUID->"9ecb2985-0339-49f0-bf14-48876cca43a3"],
+Cell[5875, 156, 468, 9, 32, "Output",ExpressionUUID->"add79eac-5c16-4285-beee-4f21a29be190"]
+}, Open  ]],
+Cell[6358, 168, 256, 6, 28, "Input",ExpressionUUID->"a9dc3339-71c7-4f57-bda1-c2fdaef2f4dc"],
+Cell[CellGroupData[{
+Cell[6639, 178, 192, 4, 28, "Input",ExpressionUUID->"aa57215e-b975-4f4e-8dc7-70a196159547"],
+Cell[6834, 184, 4009, 83, 128, "Output",ExpressionUUID->"49f17a5e-2bb5-458a-ab06-7be86eeb492e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10880, 272, 546, 14, 48, "Input",ExpressionUUID->"1cffadf7-73cf-4089-a5af-d8b30b080bd1"],
+Cell[11429, 288, 132, 3, 32, "Output",ExpressionUUID->"79059ef0-09b4-469f-9fd8-a6ea28e1eb48"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11598, 296, 527, 12, 48, "Input",ExpressionUUID->"1700b7a8-bee6-4e85-8cb4-b3a035434861"],
+Cell[12128, 310, 294, 7, 32, "Output",ExpressionUUID->"70bbb415-0d8b-479e-9321-305d9c5dc08d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12459, 322, 569, 15, 48, "Input",ExpressionUUID->"f82ad9ff-0098-4a86-8116-c5b275bafea5"],
+Cell[13031, 339, 739, 13, 32, "Output",ExpressionUUID->"a7e580c6-5c7e-4d65-abda-79d6b800b1ce"]
+}, Open  ]],
+Cell[13785, 355, 296, 8, 28, "Input",ExpressionUUID->"c85e1127-7e26-4b0f-ba22-a0d6709bea55"],
+Cell[CellGroupData[{
+Cell[14106, 367, 194, 4, 28, "Input",ExpressionUUID->"58dd5e8b-35cc-432f-bb34-0b619bd1cbe1"],
+Cell[14303, 373, 2782, 60, 385, "Output",ExpressionUUID->"242ec141-5031-4523-8255-c367a56a0ec1"]
+}, Open  ]]
+}
+]
+*)
+
